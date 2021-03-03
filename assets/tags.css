@@ -1,0 +1,27 @@
+.tags {
+    display: inline;
+    position: relative;
+}
+.tags:hover:after {
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 2px;
+    bottom: -33px;
+    color: #fff;
+    content: attr(glose);
+    left: 60%;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 80;
+    /*width: 350px;*/
+}
+.tags:hover:before {
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 0 6px 6px 6px;
+    bottom: -4px;
+    content: "";
+    left: 65%;
+    position: absolute;
+    z-index: 99;
+}
